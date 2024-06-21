@@ -1,0 +1,3 @@
+bean\model\Candidato.class
+bean\backing\VacanteForm.class
+bean\configuration\ConfigurationJSF.class

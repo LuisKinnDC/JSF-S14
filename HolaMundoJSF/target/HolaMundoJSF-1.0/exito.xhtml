@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <head>
+        <title>Éxito</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Incluir CSS de Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <!-- Incluir FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Rm8S1bM3vjs4i/GDr5q9zjK0RmMeAEx8yYP3jq3ZTfR90GtOTlRgDx2HjFMr8BgV9AyLdyXh1FOOaIh7JHaxdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1 class="text-success"><i class="fas fa-check-circle"></i> Éxito</h1>
+            <h:form>
+                <div class="alert alert-success" role="alert">
+                    <i class="fas fa-thumbs-up"></i> Gracias #{candidato.nombre} por aplicar a la vacante.
+                </div>
+                <h:commandLink action="index" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Regresar</h:commandLink>
+            </h:form>
+        </div>
+        
+        <!-- Incluir JavaScript de Bootstrap y dependencias -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

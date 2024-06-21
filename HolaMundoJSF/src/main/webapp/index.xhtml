@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <head>
+        <title>Hola Mundo JSF</title>
+        <!-- Incluir CSS de Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <!-- Incluir FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Rm8S1bM3vjs4i/GDr5q9zjK0RmMeAEx8yYP3jq3ZTfR90GtOTlRgDx2HjFMr8BgV9AyLdyXh1FOOaIh7JHaxdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-5"><i class="fas fa-user-edit"></i> Formulario de Vacante</h1>
+            <h:form class="mt-4">
+                <div class="form-group row">
+                    <label for="nombre" class="col-sm-2 col-form-label"><h:outputLabel for="nombre" value="Nombre: " /></label>
+                    <div class="col-sm-10">
+                        <h:inputText id="nombre" value="#{candidato.nombre}" class="form-control" />
+                        <h:message for="nombre" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <h:commandButton action="#{vacanteForm.enviar}" value="Enviar" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </h:commandButton>
+                    </div>
+                </div>
+            </h:form>
+        </div>
+        
+        <!-- Incluir JavaScript de Bootstrap y dependencias -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
